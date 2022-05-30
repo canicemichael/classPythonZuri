@@ -6,6 +6,9 @@ class Student:
         self.tracks = tracks
         self.score = score
 
+    def __repr__(self):
+        return f"Student: {self.name}, age: {self.age}, tracks: {self.tracks}, score: {self.score}"
+
     def change_name(self, value):
         self.name = value
 
@@ -36,4 +39,4 @@ Bob.change_age(34)
 Bob.add_track("UI/UX")
 Bob.get_score()
 
-print(Bob.name)
+print(Bob)
